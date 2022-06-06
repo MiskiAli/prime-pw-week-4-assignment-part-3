@@ -22,20 +22,26 @@ console.log ('adding book', addItem('book'));
 
 // start listItems function 
 
-function listItems () {
-    
+function listItems() {
+    console.log(basket)
 }
-console.log('Items that are in my basket:');
-listItems();
+console.log('Items that are in my basket:', basket);
+
 
 //check if items are listed 
 console.log(`My basket has a ${basket}`);
 
-function empty () {
-    basket = [];
+
+function empty() {
+
+    basket=[];
+    return basket;
+    
 }
+
+
 // should remove item from basket
-console.log ('Remove all item from my basket', empty());
+console.log ('Remove all items from my basket', empty());
 
 //check if items were actually emptied
 console.log(`basket is ${basket}`);
